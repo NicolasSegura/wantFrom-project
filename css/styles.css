@@ -1,0 +1,18 @@
+:root{
+    --primaryColor: #004433;
+
+}
+
+
+html, body{
+    height: 100%;
+    background-color: primaryColor;
+}
+
+.bg-dark{
+    background-color: var(--primaryColor) !important;
+}
+
+.navbar{
+    min-height: 5rem;
+}
