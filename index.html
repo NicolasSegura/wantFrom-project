@@ -1,638 +1,853 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WantFrom</title>
+<!doctype html>
+<html lang="en" style="width: auto; ">
 
-        <!-- Plugin-CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!-- Main-Stylesheets -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Segura Nicolas">
+    <meta name="description" content="WantFrom e-commerce">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles2.css">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+
+    <!-- Font-awesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Want From</title>
 </head>
 
-
-<body data-spy="scroll" data-target="#primary-menu" >
-
-    <div class="preloader">
-        <div class="centered ">            
-            <img class="" src="./images/logoGrande.svg" height="400px" width="400px" alt="">
-        </div>
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
+<body id="bodyContent">
+    <!-- BOTON FLOTANTE WSP -->
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5199999999" target="_blank">
+        <img src="./img/wsp_icon.png" height="60px" width="60px" alt="">
+        </a>
     </div>
-    <!--Mainmenu-area-->
 
-        <!--HEADER BLANCO-->
-
-        <!--HEADER BLANCO-->
-
-    <div class="mainmenu-area"  data-offset-top="100">
-        <div class="container ">
-            <!--Logo-->
-            <div class="navbar-header " style="">
-
-
-                <div class="hidden-xs" style="margin-top: -30px;" >
-                    <a href="#" class="navbar-brand logo">
-                        <img src="./images/logoGrande.svg" width="300px" height="300px" alt="">
-                    </a>
-                </div>
-
-            </div>
-            <!--Logo/-->
-            <!-- 
-            <nav class="collapse navbar-collapse " id="primary-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="#home-page" class="letraPrincipal linksNav">Home</a></li>
-                    <li><a href="#service-page" class="letraPrincipal linksNav">Caracteristicas</a></li>
-                    <li><a href="#feature-page" class="letraPrincipal linksNav">Features</a></li>
-                    <li><a href="#price-page" class="letraPrincipal linksNav">Precios</a></li>
-                    <li><a href="#faq-page" class="letraPrincipal linksNav">FAQ</a></li>
-                    <li><a href="#contact-page" class="letraPrincipal linksNav">Contacto</a></li>
-                </ul>
-            </nav>
-            -->
-            <nav class="collapse navbar-collapse " id="primary-menu">
-                <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#primary-menu">
-                    <img src="./images/Iso-4.svg" height="80px" width="80px" alt="">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" style="width: auto;">
+            <div class="row" style="width: 100%; margin-top: -40px;">
+                <a  class="d-none d-sm-none d-md-block navbar-brand text-light font-weight-bold  " style="margin-left: 40px; margin-top: 0px;" href="http://wantfrom.com.es/">
+                    <img id="logo1" src="img/logos/Logo-CelesteBlanco.svg" width="250px" height="200px" alt="">
+                </a>
+                
+                <button id="botonBuger" class="navbar-toggler navBarBoton"   type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                    <i class="icon ion-md-menu lead text-light" ></i>
                 </button>
-                <ul class="nav navbar-nav navbar-right" style="">
-                   <!--  <li><a href="#contact-page" class="letraPrincipal linksNav">Contacto</a></li>    --> 
-                </ul>
-            </nav>
-     
-        </div>
-    </div>
-    <!--Mainmenu-area/-->
 
 
-
-    <!--Header-area-->
-    <header class="header-area overlay full-height relative v-center" id="home-page">
-        <div class="absolute anlge-bg"></div>
-        <div class="container">
-            <div class="row v-center">
-                <div class="col-xs-12 col-md-7 header-text">
-                    <h1 style="font-size: 55px; font-family: 'campton bold';">Creamos tu</h1>
-                    <h1 style="font-size: 55px; font-family: 'campton bold';">Tienda Online</h1>
-                    <p style="font-size: 20px; font-family: 'campton bold';">Obtenga la Licencia de nuestra plataforma E-Commerce y desarrolle su
-                        Negocio en internet.</p>
-                        <div style="margin-top: 30px; ">
-                            <a href="" class="letraPrincipal phoneHome" style="font-size: 25;"> 
-                                <img src="images/wsp.jpg" style="border-radius: 100%; margin-right: 10px;" height="45" width="45" alt=""> 34 664858028  </a>
-                        </div>
-                    <div  style="align-items: center; justify-content: center; display: block;">
-                        <a href="#contact-page" class="button white" 
-                        style=" font-weight: bold; margin-top: 50px; color: #233f66 ; height: 55px;">Empezá Ahora</a>
+                
+                <div class="collapse navbar-collapse" style="margin-right: 0px;" id="navbarSupportedContent" > 
+                    
+                    <!-- DIV QUE APARECE EN VERSION ESCRITORIO - RESPONSIVE-->
+                    <div class="d-none d-sm-none d-md-block">
+                        <ul class="navbar-nav ml-5" style="margin-right: 25px; position: absolute; right: 200px;" >
+                            <li class="nav-item" id="barra1">
+                                <a class="nav-link text-light " style="padding-right: 0px;" href="#Nosotros">NOSOTROS  | </a>                          
+                            </li>
+                            <li class="nav-item" id="barra2">
+                                <a class="nav-link text-light" style="padding-right: 0px;" href="#Tu-Tienda">TU TIENDA  |</a>
+                            </li>
+                            <li class="nav-item" id="barra3">
+                                <a class="nav-link text-light" style="padding-right: 0px;" href="#FAQ">FAQ  |</a>
+                            </li>
+                            <li class="nav-item" id="barra4">
+                                <a class="nav-link text-light" style="padding-right: 0px;" href="#Contacto">CONTACTO  |</a>
+                            </li>
+                            <li class="nav-item" id="barra5">
+                                <a class="nav-link text-light" href="#">BLOG</a>
+                            </li>
+                        </ul>     
                     </div>
 
+
+
+                    <!-- DIV QUE APARECE EN VERSION MOBILE - RESPONSIVE-->
+                    <div class="d-block d-md-none d-sm-block "  >
+                        <ul class="navbar-nav ml-5" style="height: 10px;">
+                            <li class="nav-item" id="barra1">
+                                <a class="nav-link text-light " style="padding-right: 0px;" href="#Nosotros">NOSOTROS  | </a>                          
+                            </li>
+                            <li class="nav-item" id="barra2">
+                                <a class="nav-link text-light" style="padding-right: 0px;" href="#Tu-Tienda">TU TIENDA  |</a>
+                            </li>
+                            <li class="nav-item" id="barra3">
+                                <a class="nav-link text-light" style="padding-right: 0px;" href="#FAQ">FAQ  |</a>
+                            </li>
+                            <li class="nav-item" id="barra4">
+                                <a class="nav-link text-light" style="padding-right: 0px;" href="#Contacto">CONTACTO  |</a>
+                            </li>
+                            <li class="nav-item" id="barra5">
+                                <a class="nav-link text-light" href="#">BLOG</a>
+                            </li>
+                        </ul>     
+                    </div>
+
+
+                </div>                
+            </div>
+        </nav>
+    
+        <!--  BARRA PROGRESO
+        <div class=" progress-bar-container">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+        -->
+    </div>
+   
+
+
+      
+
+    <!--  SECTION ORIGINAL
+    <section id="hero-container" class="position-relative text-light">
+        <div id="hero-background"></div>
+        <div id="hero-content" class="container h-100">
+            <div class="row no-gutters h-100 d-flex">
+                <div id="hero-text" class="col-md-6 align-self-center">
+                    <h1 class="display-1 font-weight-bold mb-4">Aumenta tus ventas</h1>
+                    <p class="lead mb-5">The online video editor trusted by content creators to make professional videos
+                        in minutes.
+                    </p>
+                    <a href="#" class="btn btn-primary">Comienza tu proyecto</a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-5 text-right">
-                    <div class="screen-box">
-                        <div class="item" style="">
-                            <img src="images/iso-2.svg" style="z-index: 2; position: absolute; bottom: 4%;  left: 5%;" height="450px" width="450px" alt="">  
-                            <img src="images/Iso-3-darkest.svg" style="transform: rotate(-7deg); z-index: 1;" height="550px" width="550px" alt="">
+                <div class="col-md-6 img-container align-self-center h-100">
+                    <img src="img/iphone.png" id="hero-img" class="position-absolute">
+                    <img src="img/lines.svg" id="lines" class="spin position-absolute">
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+
+        <section id="Home" class=" position-relative text-light text-light background-light-blue-x2" style=" height: 768px;" >
+            
+            <div class="row justify-content-center" style="position: absolute; margin-left: 0px;
+            bottom: 0px; right: 0px; left: 0px; width: 100%; z-index: 2; ">
+                <div class="col-md-12" style="padding: 0px;">
+                    <img src="img/fondos/Zócalo-Home.svg" width="auto" style="object-fit: cover;" alt="">
+                </div>
+
+            </div>
+            
+            <video src="img/video-nosotros.mp4" id="videoHome" autoplay loop muted poster="iphone.png" style="opacity: 0.1;" width="100%" height="100%">
+            </video>
+            <div id="Tu-Tienda-content" class="container h-100">
+                <div class="row no-gutters h-100 d-flex justify-content-center" style="padding-top: 0px">
+                    <div id="" class="col-md-12 align-self-center text-center" style="margin-top: 0px;">
+                        <h1 class="font-weight-bold mb-4 primary-wf-text-color extraBoldMontse" style="font-size: 60px;" >Creamos tu tienda online.</h1>
+                      
+                        <div class="row justify-content-center">
+                            <div class="col-md-8  align-self-center text-center" >
+                                <p class="lead mb-5 primary-wf-text-color regularMonts" style="font-size: 25px; font-weight: bold;">
+                                    Obtén la licencia de nuestra plataforma e-commerce y desarrolla tu negocio en internet.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div>
+                            <img src="img/rectanguloBlanco.png" 
+                            height="100%" width="100%" alt="">
+                        </div>
+                        -->
+                        <!--  BOTON DE ANTES
+                        <div class="row justify-content-center">
+                            <a href="#" class="btn btn-primary centrar">Comienza ahora</a>
+    
+                        </div>
+                        -->
+                        <div id="stepLineDiv">
+                            <img src="img/logos/Línea-HOME.svg" width="70%" alt="">
+                        </div>
+                        <div style="margin-top: 20px;" class="regularMonts">
+                            <p>Comienza Ahora</p>
+                        </div>
+                        <div class="row justify-content-center icon-content" style="margin-top: 0px;">
+                            <div class="col-md text-center" >
+                                <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white" ></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!--Header-area/-->
+        </section>
 
-
-
-    <!--Feature-area-->
+  
     
-    <section class="gray-bg section-padding" id="service-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/service-icon-1.png" alt="">
-                        </div>
-                        <h4 class="letraPrincipal">Adapte su Tienda</h4>
-                        <p>Adaptamos su Tienda Online de acuerdo a sus colores, su logo y sus productos.</p>
+    
+     <!--
+    <section id="hero-container" class="position-relative text-light">
+        <div id="hero-background"></div>
+        <div id="hero-content" class="container h-100">
+            <div class="row no-gutters h-100 d-flex">
+                <div id="hero-text" class="col-md-12 align-self-center">
+                    <h2 class="display-1 font-weight-bold mb-4 primary-wf-text-color">Creamos tu tienda online.</h2>
+                    <p class="lead mb-5">
+                        Obtén la licencia de nuestra plataforma e-commerce y desarrolla tu negocio en internet.
+                    </p>
+                    <div class="row justify-content-center">
+                        <a href="#" class="btn btn-primary centrar">Comienza ahora</a>
+
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/service-icon-2.png" alt="">
+                    <div class="row justify-content-center icon-content" style="margin-top: 50px;">
+                        <div class="col-md ">
+
                         </div>
-                        <h4 class="letraPrincipal">Pasarela de Pago</h4>
-                        <p>Su tienda Online podrá aceptar Tarjetas de Débito/Crédito a través de Paypal.</p>
+                        <div class="col-md text-center" >
+                            <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x" ></i></a>
+                        </div>
+                        <div class="col-md text-right">
+                   
+                            <a href="#"> <i class="fa fa-whatsapp fa-5x" ></i></a>
+                        </div>
+
                     </div>
+                
+
                 </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/service-icon-3.png" alt="">
-                        </div>
-                        <h4 class="letraPrincipal">Administre su Negocio</h4>
-                        <p> Cuenta con un Panel de Administrador desde el que podrá administrar su Tienda.
+            </div>
+        </div>
+    </section>
+-->
+
+<section id="Nosotros" class=" position-relative text-light text-light background-grey-wf" style="height: 755px;" >
+    <div class="row justify-content-center" style="position: absolute; margin-left: 0px;
+        bottom: 0px; right: 0px; left: 0px; width: 100%; z-index: 2; ">
+        <div class="col-md-12" style="padding: 0px;">
+            <img src="img/fondos/Zócalo-NOSOTROS.svg" width="100%"  alt="">
+        </div>
+
+    </div>
+
+    <video src="img/video-nosotros2.mp4" id="videoHome2" autoplay loop muted style="opacity: 0.1;" width="100%" height="100%">
+    </video>
+    <div id="Tu-Tienda-content" class="container h-100">
+        <div class="row no-gutters h-100 d-flex justify-content-center" style="padding-top: 100px">
+            <div id="" class="col-md-12 align-self-center text-center" style="margin-top: 50px;">
+                <h1 class="font-weight-bold mb-4 primary-wf-text-color extraBoldMontse" style="font-size: 60px;" >Creamos tu tienda online.</h1>
+              
+                <div class="row justify-content-center">
+                    <div class="col-md-8  align-self-center text-center" >
+                        <p class="lead mb-5 primary-wf-text-color regularMonts" style="font-size: 25px; font-weight: bold;">
+                            Llegamos para que tus ventas se potencien.
+                        </p>
+                        <p class="lead mb-5 primary-wf-text-color regularMonts" style="font-size: 25px; font-weight: bold;">
+                            Ya no es necesario que alguien cruce la ciudad para conocerte. Desde el sofá, la cama, el coche o el banco de una plaza; ahora puedes estar presente en cualquier punto del mundo.
+                        </p>
+                        <p class="lead mb-5 primary-wf-text-color regularMonts" style="font-size: 25px; font-weight: bold;">
+                            Somos un equipo altamente capacitado combinado con un producto de excelencia en ventas online. Buscamos brindarte soluciones sin que tengas que preocuparte por nada.                             
+                        </p>
+                        <p class="lead mb-5 primary-wf-text-color regularMonts" style="font-size: 25px; font-weight: bold;">
+                             Ahora tu producto, a un click de distancia.
                         </p>
                     </div>
                 </div>
+
+                <!--  BOTON DE ANTES
+                <div class="row justify-content-center">
+                    <a href="#" class="btn btn-primary centrar">Comienza ahora</a>
+
+                </div>
+                -->
+                <div style="margin-top: 20px;" class="regularMonts">
+                    <p>Comienza Ahora</p>
+                </div>
+                <div class="row justify-content-center icon-content" style="margin-top: 0px;">
+                    <div class="col-md text-center" >
+                        <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white" ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- NOSOTROS
+        <section id="Nosotros" class="position-relative text-light">
+            <div id="Nosotros-content" class="container h-100">
+                <div class="row no-gutters h-100 d-flex justify-content-center" style="margin-top: 120px;">
+                    <div id="" class="col-md-12 align-self-center text-center">
+                        <video src="img/video-nosotros.mp4" autoplay lopp muted poster="iphone.png" width="80%" height="80%">
+                        </video>
+        
+                        <div class="row justify-content-center icon-content" style="margin-top: 50px;">
+                            <div class="col-md ">
+        
+                            </div>
+                            <div class="col-md text-center">
+                                <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white"></i></a>
+                            </div>
+                            <div class="col-md text-right">
+                                <a href="#"> <i class="fa fa-whatsapp fa-5x"></i></a>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+    <!-- TU TIENDA -->
+    <section id="Tu-Tienda" class="seccionesPropias position-relative text-light background-primary-color" style="" >
+        
+        <div class="row justify-content-center" style="position: absolute; margin-left: 0px;
+            bottom: 0px; right: 0px; left: 0px; width: 100%; z-index: 2; ">
+            <div class="col-md-12" style="padding: 0px;">
+                <img src="img/fondos/Zócalo-TUTIENDA.svg" width="100%"  alt="">
+            </div>
+
+        </div>
+        <div id="Tu-Tienda-content" class="container h-100">
+            <div class="row no-gutters h-100 d-flex justify-content-center" style="margin-top: 0px; ">
+                <div id="" class="col-md-12 align-self-center text-center" style="margin-top: 50px;">
+                    <p class="extraBoldMontse light-blue-x3-text-color" style="font-size: 30px;">Adquiera su licencia anual y comience a vender on-line sin comisiones.</p>
+                    <p style="color: #c4deed; font-size: 25px;"> <b>Elige el plan en función de los servicios que te ofrecemos</b></p>
+                        <div class="row  justify-content-center" style="margin-top: 35px;">
+
+                                <div class="price-table col-md-3 col-sm-2 col-xs-12" >
+                                    <h3 class="text-uppercase price-title extraBoldMontse primary-wf-text-color">Premium P</h3>
+                                    <h5 class="text-uppercase price-title primary-wf-text-color card-monto" >€3500</h5>
+                                    <hr>
+                                    <ul style=" padding-left: 0px; list-style-type: none;">
+                                     <!--<li><strong class="amount">$ <span class="big">20</span></strong>/Month</li> -->   
+                                     <li>Host, Dominio</li>
+                                     <li>Certificado SSL</li>
+                                        <li>Capacidad 3GB</li>
+                                        <li>E-commerce</li>
+                                        <li>Updates</li>
+                                        <li>Mantenimiento</li>
+                                        <li>Atencion al cliente</li>
+                                        <li>Mantenimiento </li>
+                                        <li style="text-decoration: line-through;"> Soporte</li>
+                                        <li style="text-decoration: line-through;"> Personalizado </li>
+                                    </ul>
+                                    <hr>
+                                    <button class=" btn btn-primary boton-cardPrice">mas info</button>
+                                </div>
+
+                                <!-- SEPARADOR QUE SOLO APARECE EN TAMAÑO SM-->
+                                <div class="d-block d-md-none d-sm-block col-sm-12" style="height: 30px;">
+  
+                                </div>
+
+                                <div class="price-table col-md-3  col-sm-2 col-xs-12" >
+                                    <h3 class="text-uppercase price-title extraBoldMontse primary-wf-text-color">Premium S</h3>
+                                    <h5 class="text-uppercase price-title primary-wf-text-color card-monto">€3500</h5>
+                                    <hr>
+                                    <ul class="" style=" padding-left: 0px; ;">
+                                         <!--<li><strong class="amount">$ <span class="big">20</span></strong>/Month</li> -->   
+                                         <li>Host, Dominio</li>
+                                         <li>Certificado SSL</li>
+                                         <li>Capacidad 5GB</li>
+                                         <li>E-commerce</li>
+                                         <li>Updates</li>
+                                         <li>Mantenimiento</li>
+                                         <li>Atencion al cliente</li>
+                                         <li> Mantenimiento</li>
+                                         <li> Soporte</li>
+                                         <li style="text-decoration: line-through;"> Personalizado </style=>
+                                    </ul>
+                                    <hr>
+                                    <button class=" btn btn-primary boton-cardPrice">mas info</button>
+                                </div>
+
+                                <!-- SEPARADOR QUE SOLO APARECE EN TAMAÑO SM-->
+                                <div class="d-block d-md-none d-sm-block col-sm-12" style="height: 30px;">
+  
+                                </div>
+                            
+                                <div class="price-table col-md-3  col-sm-12 col-xs-12" >
+                                    <h3 class="text-uppercase price-title extraBoldMontse primary-wf-text-color" 
+                                    >Premium C</h3>
+                                    <h5 class="text-uppercase price-title primary-wf-text-color card-monto" >€3500</h5>
+                                    <hr>
+                                    <ul style=" padding-left: 0px;  list-style-type: none;">
+                                         <!--<li><strong class="amount">$ <span class="big">20</span></strong>/Month</li> -->   
+                                         <li>Host, Dominio</li>
+                                         <li>Certificado SSL</li>
+                                         <li>Capacidad Custom</li>
+                                         <li>E-commerce</li>
+                                         <li>Updates</li>
+                                         <li>Mantenimiento</li>
+                                         <li>Atencion al cliente</li>
+                                         <li> Mantenimiento</li>
+                                         <li> Soporte</li>
+                                         <li> Personalizado </li>
+                                    </ul>
+                                    <hr>
+                                    <button class=" btn btn-primary boton-cardPrice">mas info</button>
+                         
+                            </div>
+                        </div>
+
+
+                        <div style="margin-top: 20px;" class="regularMonts">
+                            <p>Comienza Ahora</p>
+                        </div>
+                        <div class="row justify-content-center icon-content" style="margin-top: 0px;">
+                            <div class="col-md text-center" >
+                                <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white" ></i></a>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
     </section>
+
+        <!-- FAQ -->
+        <!--        <section id="FAQ" class="position-relative text-light background-light-blue-x3"  style="height: 755px;">
+            <div class="row justify-content-center" style="position: absolute; margin-left: 0px;
+             bottom: 0px; right: 0px; left: 0px; width: 100%; z-index: 2; ">
+                <div class="col-md-12" style="padding: 0px;">
+                    <img src="img/fondos/Zócalo-FAQS.svg" width="100%"  alt="">
+                </div>
+
+            </div>
+
+            <div id="FAQ-content" class="container h-100" style="">
+                <div class="row no-gutters h-100 d-flex justify-content-center" style="">
+                    <div id="" class="col-md-12 align-self-center text-center " style="">
+                        <p style="font-size: 40px;">Con la suscripción a cualquier licencia 
+                            diseñamos tu tienda y la dejamos lista para que comiences a vender en 15 días.</p>
     
-    <!--Feature-area/-->
-
-    <section class="angle-bg sky-bg section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="caption_slide" class="" data-ride="">
-                        <div class="" role="listbox">
-                            <div class="item active row">
-                                <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2 class="letraPrincipal">Enfoque en el Cliente </h2>
-                                            <p>Nuestro principal objetivo es satisfacer las necesidades del comprador de la mejor manera. Para
-                                                ello nuestro equipo trabaja día a día en mejorar las interfaces el usuario.    </p>
-                                                <div  style="margin-top: -10px; height: auto;"><a  href="#contact-page" style="margin-top: -50px;"> + Mas Info</a> </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-6" style="margin-left: 0px;">
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >¿Cómo puedo adquirir mi Tienda Online? </a>
+                                            </h4>
+                                            <div id="collapse1" class="panel-collapse collapse">
+                                                <p>
+                                                    Solo deberás llamar o completar el formulario de contacto y nos pondremos en contacto contigo
+                                                    para explicarte el proceso de instalación y pago.
+                                                </p>
+                                            </div>
                                         </div>
-                                        <br>
-                                        <div class="caption-title marginTopXs" data-animation="animated fadeInUp">
-                                            <h2 class="letraPrincipal">Plataforma Escalable </h2>
-                                            <p>Su Tienda Virtual estará alojada en la Nube. Nuestros expertos trabajan día a día en crear una
-                                                infraestructura escalable y modular orientada a la seguridad y velocidad de los datos.</p>
-                                                <div  style="margin-top: -10px; height: auto;" ><a  href="#contact-page" style="margin-top: -50px;"> + Mas Info</a> </div>
-                                            
-                                        </div>
-                                        <br>
-                                        
-                                    </div>
-                                    <div class="hidden-xs   col-md-6">
-                                        <div class="caption-photo one" style="margin-left: 80px;" data-animation="animated fadeInRight">
-                                            <img 
-                                            src="images/caract-4.jpg" 
-                                            style="border-radius: 10%; " 
-                                            alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="angle-bg sky-bg section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="caption_slide" class="" data-ride="">
-                        <div class="" role="listbox">
-                            <div class="item active row">
-                                <div class="v-center">
-                                    <div class="hidden-xs   col-md-6">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight" style="margin-right: 80px;">
-                                            <img src="images/caract-1.jpg"
-                                             style="border-radius: 10%;" 
-                                             alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp" style="margin-top: 10px;">
-                                            <h2 class="letraPrincipal">Vende en todas partes</h2>
-                                            <p>Utilice su plataforma para vender productos de manera Online a cualquier comprador que acceda
-                                                a su Tienda Online.</p>
-                                            <div  style="margin-top: -10px; height: auto;"><a  href="#contact-page" style="margin-top: -50px;"> + Mas Info</a> </div>
-                                        </div>
-                                        
-                                        <br>
-                                        <div class="caption-title marginTopXs" data-animation="animated fadeInUp">
-                                            <h2 class="letraPrincipal">Pasarela de Pago Incorporada </h2>
-                                            <p>Actualmente su E-Commerce podrá aceptar Tarjetas a través de PayPal. Nuestros expertos
-                                                continúan trabajando para brindar más opciones para los clientes finales.
-                                            </p>
-                                            <div  style="margin-top: -10px; height: auto;"><a  href="#contact-page" style="margin-top: -50px;"> + Mas Info</a> </div>
-                                        </div>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="angle-bg sky-bg section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="caption_slide" class="" data-ride="">
-                        <div class="" role="listbox">
-                            <div class="item active row">
-                                <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2 class="letraPrincipal">Soluciones para Emprendedores y Pymes</h2>
-                                            <p>Nuestra Licencia es una solución excelente para aquellas pequeñas empresas que deseen
-                                                potenciar sus negocios y comenzar a vender Online. </p>
-                                            <div  style="margin-top: -10px; height: auto;"><a  href="#contact-page" style="margin-top: -50px;"> + Mas Info</a> </div>
-                                        </div>
-                                        <br>
-                                        <div class="caption-title marginTopXs" data-animation="animated fadeInUp">
-                                            <h2 class="letraPrincipal">Soluciones para Medianas y Grandes Empresas </h2>
-                                            <p>Gracias a nuestra plataforma escalable podemos ofrecerle un producto adaptado a sus productos,
-                                                clientes, infraestructuras en la nube, y todos aquellos datos que resulten relevantes.
-                                            </p>
-                                            <div  style="margin-top: -10px; height: auto;"><a  href="#contact-page" style="margin-top: -50px;"> + Mas Info</a> </div>
-                                        </div>
-                                        <br>
-                                        
-                                    </div>
-                                    <div class=" hidden-xs   col-md-6">
-                                        <div class="caption-photo one" style="margin-left: 80px;" data-animation="animated fadeInRight">
-                                            <img 
-                                            src="images/caract-2.jpg" 
-                                            style="border-radius: 10%;" 
-                                            alt="">
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!--
-    <section class="gray-bg section-padding" id="feature-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>SPECIAL FEATURES</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-1.png" alt="">
-                        </div>
-                        <h3>Creative Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-2.png" alt="">
-                        </div>
-                        <h3>Unlimited Features</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-3.png" alt="">
-                        </div>
-                        <h3>Full Free Chat</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-     -->
-
-
-
-    <section class="price-area overlay section-padding" id="price-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2 class="letraPrincipal">Licencias</h2>
- 
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-table" style="border-radius: 10%;">
-                        <h3 class="text-uppercase price-title letraPrincipal">Premium</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                         <!--<li><strong class="amount">$ <span class="big">20</span></strong>/Month</li> -->   
-                            <li>Host, Dominio, Certificado SSL</li>
-                            <li>Capacidad 3GB</li>
-                            <li>E-commerce</li>
-                            <li>Updates</li>
-                            <li>Mantenimiento</li>
-                            <li>Atencion al cliente</li>
-                            <li>Mantenimiento </li>
-                            <li style="text-decoration: line-through;"> Soporte</li>
-                            <li style="text-decoration: line-through;"> Personalizado </li>
-                        </ul>
-                        <hr>
-                        <a href="#contact-page" class="button">Mas Información</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-table " style="border-radius: 10%;">
-                     
-                        <h3 class="text-uppercase price-title letraPrincipal">Premium Extended</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                             <!--<li><strong class="amount">$ <span class="big">20</span></strong>/Month</li> -->   
-                             <li>Host, Dominio, Certificado SSL</li>
-                             <li>Capacidad 5GB</li>
-                             <li>E-commerce</li>
-                             <li>Updates</li>
-                             <li>Mantenimiento</li>
-                             <li>Atencion al cliente</li>
-                             <li> Mantenimiento</li>
-                             <li> Soporte</li>
-                             <li style="text-decoration: line-through;"> Personalizado </style=>
-                        </ul>
-                        <hr>
-                        <a href="#contact-page" class="button">Mas Información</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-table" style="border-radius: 10%;">
-                        <h3 class="text-uppercase price-title letraPrincipal">Custom</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                             <!--<li><strong class="amount">$ <span class="big">20</span></strong>/Month</li> -->   
-                             <li>Host, Dominio, Certificado SSL</li>
-                             <li>Capacidad Custom</li>
-                             <li>E-commerce</li>
-                             <li>Updates</li>
-                             <li>Mantenimiento</li>
-                             <li>Atencion al cliente</li>
-                             <li> Mantenimiento</li>
-                             <li> Soporte</li>
-                             <li> Personalizado </li>
-                        </ul>
-                        <hr>
-                        <a href="#contact-page" class="button">Mas Información</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="gray-bg section-padding" id="faq-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2 class="letraPrincipal" >FAQ</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-6" style="margin-left: 0px;">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >¿Cómo puedo adquirir mi Tienda Online? </a>
-                            </h4>
-                            <div id="collapse1" class="panel-collapse collapse">
-                                <p>
-                                    Solo deberás llamar o completar el formulario de contacto y nos pondremos en contacto contigo
-                                    para explicarte el proceso de instalación y pago.
-                                </p>
-                            </div>
-                        </div>
-                    
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">¿Qué costo tiene? </a>
-                            </h4>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <p>
-                                    La Licencia Anual Base tiene un costo de U$D2.000. A partir de este monto se adapta de acuerdo
-                                    al tamaño del negocio.
                                     
-                                </p>
-                            </div>
-                        </div>
-                    
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">¿Qué diseño va a tener mi tienda? </a>
-                            </h4>
-                            <div id="collapse5" class="panel-collapse collapse">
-                                <p>
-                                    Nuestra empresa trabaja con un diseño orientado a las necesidades y gustos de los clientes finales.
-                                    Por lo que el diseño se irá actualizando a medida se actualicen las versiones de la Licencia.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                                        <div class="panel">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">¿Qué costo tiene? </a>
+                                            </h4>
+                                            <div id="collapse3" class="panel-collapse collapse">
+                                                <p>
+                                                    La Licencia Anual Base tiene un costo de U$D2.000. A partir de este monto se adapta de acuerdo
+                                                    al tamaño del negocio.
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="panel">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">¿Qué diseño va a tener mi tienda? </a>
+                                            </h4>
+                                            <div id="collapse5" class="panel-collapse collapse">
+                                                <p>
+                                                    Nuestra empresa trabaja con un diseño orientado a las necesidades y gustos de los clientes finales.
+                                                    Por lo que el diseño se irá actualizando a medida se actualicen las versiones de la Licencia.
+                                                </p>
+                                            </div>
+                                        </div>
                 
-
-
-                <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-6" style="margin-left: 0px;">
-                    <div class="panel-group" id="accordion">
-
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">¿Qué implica una Licencia? </a>
-                            </h4>
-                            <div id="collapse6" class="panel-collapse collapse">
-                                <p>
-                                    Abonar una Licencia Anual significa adquirir la autorización de uso de nuestra Plataforma
-                                     ECommerce durante un período de un (1) año, pudiendo luego ser renovada.
-                                </p>
+                                    </div>
+                                </div>
+                                
+                
+                
+                                <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-6" style="margin-left: 0px;">
+                                    <div class="panel-group" id="accordion">
+                
+                                        <div class="panel">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">¿Qué implica una Licencia? </a>
+                                            </h4>
+                                            <div id="collapse6" class="panel-collapse collapse">
+                                                <p>
+                                                    Abonar una Licencia Anual significa adquirir la autorización de uso de nuestra Plataforma
+                                                     ECommerce durante un período de un (1) año, pudiendo luego ser renovada.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">¿Podré conocer el estado de mis Ventas?  </a>
+                                                </h4>
+                                                <div id="collapse7" class="panel-collapse collapse">
+                                                    <p>
+                                                        En nuestra plataforma cuentas con un Panel de Administrador desde donde podrás gestionar tu
+                                                        tienda online y obtener el estado de tus ventas. 
+                                                    </p>
+                                                </div>
+                                        </div>
+                                        <div class="panel">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">¿Podré acceder a Reportes y Estadísticas? </a>
+                                                </h4>
+                                                <div id="collapse8" class="panel-collapse collapse">
+                                                    <p>
+                                                        ¡Claro que sí! Día a día trabajamos en mejorar los reportes para obtener información útil que
+                                                        ayude a mejorar las expectativas y necesidades de los clientes finales.
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="panel">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">¿Podré conocer el estado de mis Ventas?  </a>
-                                </h4>
-                                <div id="collapse7" class="panel-collapse collapse">
-                                    <p>
-                                        En nuestra plataforma cuentas con un Panel de Administrador desde donde podrás gestionar tu
-                                        tienda online y obtener el estado de tus ventas. 
-                                    </p>
+    
+    
+                            <div style="margin-top: 20px;" class="regularMonts">
+                                <p>Comienza Ahora</p>
+                            </div>
+                            <div class="row justify-content-center icon-content" style="margin-top: 0px;">
+                                <div class="col-md text-center" >
+                                    <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white" ></i></a>
                                 </div>
-                        </div>
-                        <div class="panel">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse8">¿Podré acceder a Reportes y Estadísticas? </a>
-                                </h4>
-                                <div id="collapse8" class="panel-collapse collapse">
-                                    <p>
-                                        ¡Claro que sí! Día a día trabajamos en mejorar los reportes para obtener información útil que
-                                        ayude a mejorar las expectativas y necesidades de los clientes finales.
-                                    </p>
-                                </div>
-                        </div>
+                            </div>
                     </div>
                 </div>
-            
             </div>
-        </div>
-    </section>
+        </section>
+
+        -->
+ 
+
+
+          <!-- FAQ 2-->
+          <section id="FAQ" class="position-relative text-light background-light-blue-x3"  style="height: 755px;">
+            <div class="row justify-content-center" style="position: absolute; margin-left: 0px;
+             bottom: 0px; right: 0px; left: 0px; width: 100%; z-index: 2; ">
+                <div class="col-md-12" style="padding: 0px;">
+                    <img src="img/fondos/Zócalo-FAQS.svg" width="100%"  alt="">
+                </div>
+
+            </div>
+
+            <div id="FAQ-content" class="container h-100" style="">
+                <div class="row no-gutters h-100 d-flex justify-content-center" style="">
+                    <div id="" class="col-md-12 align-self-center text-center " style="">
+                        <p style="font-size: 40px;">Con la suscripción a cualquier licencia 
+                            diseñamos tu tienda y la dejamos lista para que comiences a vender en 15 días.</p>
+    
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-6" style="margin-left: 0px;">
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >¿Cómo puedo adquirir mi Tienda Online? </a>
+                                            </h4>
+                                            <div id="collapse1" class="panel-collapse collapse" data-parent="#accordion">
+                                                <p>
+                                                    Solo deberás llamar o completar el formulario de contacto y nos pondremos en contacto contigo
+                                                    para explicarte el proceso de instalación y pago.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" >¿Cómo puedo adquirir mi Tienda Online? </a>
+                                            </h4>
+                                            <div id="collapse2" data-parent="#accordion" class="panel-collapse collapse">
+                                                <p>
+                                                    Solo deberás llamar o completar el formulario de contacto y nos pondremos en contacto contigo
+                                                    para explicarte el proceso de instalación y pago.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                
+                                    </div>
+                                </div>
+
+                            </div>
+    
+    
+                            <div style="margin-top: 20px;" class="regularMonts">
+                                <p>Comienza Ahora</p>
+                            </div>
+                            <div class="row justify-content-center icon-content" style="margin-top: 0px;">
+                                <div class="col-md text-center" >
+                                    <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white" ></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
 
+        <!-- CONTACTO FORMULARIO -->
+        <section id="Contacto" class=" position-relative text-light text-light background-light-blue-x4" style="height: auto" >
+            <!-- 
+            <div class="row justify-content-center" style="position: absolute; margin-left: 0px;
+                bottom: 0px; right: 0px; left: 0px; width: 100%; z-index: 2; ">
+                <div class="col-md-12" style="padding: 0px;">
+                    <img src="img/fondos/Zócalo-FAQS.svg" width="100%"  alt="">
+                </div>
 
+           </div>
+           -->
+                
+            <div id="Contacto-content" class="container h-100">
+                <div class="row no-gutters h-100 d-flex justify-content-center" style="padding-top: 100px">
+                    <div id="" class="col-md-12 align-self-center text-center" style="margin-top: 50px;">
+                        <div class="row" >
+                            <div class="col-md-5 col-sm-12 col-xs-12  justify-content-center align-self-center" 
+                            style="height: 450px; text-align: left; ">
+                          
+                                <p  class="extraBoldMontse light-blue-x3-text-color" style="font-size: 30px;"> Comunicate con nosotros</p>
+                                <p style="font-size: 18px;"> Estos son nuestros medios de contacto:</p>
 
+                                <div class="row ">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 ">
+                                        <div class="col-xs-8 col-xs-offset-2 col-sm-10 "> 
+                                            <ul class="social-menu " style="width: 100%; margin-right: 0px; text-align: left; padding-left: 0px;">
+                                                <li class="item-contact"><a href="https://www.facebook.com/wantfrom/"> 
+                                                    <img src="./img/email.svg" style="margin-right: 20px;" width="20%" alt="">
+                                                </a>hola@wantfrom.es</li>
+                                                <li class="item-contact"><a href="https://www.instagram.com/wantfrom.es/">
+                                                    <img src="./img/telefono.svg" class="svg- iconic-signal-strong" style="margin-right: 20px; "  width="20%" alt="">
+                                                </a>304982394394</li>
+                                                <li class="item-contact"><a href="https://www.linkedin.com/company/wantfrom/">
+                                                    <img src="./img/telefono.svg" style="margin-right: 20px;"  width="20%" alt="">
+                                                </a>304982394394</li>
+                                                <li class="item-contact"><a href="mailto:Hola@wantfrom.es"><img src="./img/marcador-de-posicion (1).svg" style="margin-right: 20px;"  width="20%" alt="">
+                                                </a>Barcelona, España.</li>
+                                            </ul>
+                                        </div>
 
+                                    </div>
+                                </div>
 
+                            </div>
+                            
+                            <!-- SEPARADOR QUE SOLO APARECE EN TAMAÑO SM-->
+                            <div class="d-block d-md-none d-sm-block col-sm-12" style="height: 30px;">
+  
+                            </div>
+                            
+                            <div class="col-md-7 col-sm-12 col-xs-12 justify-content-center align-self-center" 
+                            style=" height: 450px; text-align: left; ">
+                                <div class="row  " >
+                                    <div class="col-md-12">
+                                        <p  class="extraBoldMontse light-blue-x3-text-color" style="font-size: 30px;   ">  Envíanos un mensaje</p>
+                                        <p style="font-size: 18px;"> Completa el formulario y nos comunicaremos contigo.</p>
+                                    </div>
 
+                                </div>
 
-    <footer class="footer-area relative sky-bg" id="contact-page">
-        <div class="absolute footer-bg"></div>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                        <div class="page-title">
-                            <h2 class="letraPrincipal">CONTACTO</h2>
+                                <div class="row justify-content-center background-light-blue-x4" style="padding-bottom: 30px;">
+                                    <div class="col-md-12 " style="padding-left: 0px; " style="width: auto;">
+                                        <form action="prueba.php" id="contact-form" style="width: auto; margin-left: 30px;" method="post" class="contact-form">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-6 col-sm-12 col-xs-12  input-form-div" >
+                                                    <input type="text" class="form-contact" placeholder="Nombre:" style="width: 100%;">
+                                        
+                                                </div>
+                                                <div class="col-md-6 col-sm-2 col-md-offset-4 input-form-div" >
+                                                    <input type="text" class="form-contact " placeholder="Empresa:" >
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-12 col-sm-2 input-form-div" >
+                                                    <input type="text" class="form-contact" placeholder="E-mail:" style="">                                     
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-6 col-sm-12 input-form-div " >
+                                                    <input type="text" class="form-contact" placeholder="Teléfono:" style="">
+                                        
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 col-md-offset-4 input-form-div" >
+                                                    <input type="text" class="form-contact " placeholder="Ciudad:" >
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-12 col-sm-10 input-form-div" style="height: 100px; ">
+                                                    <input type="text" class="form-contact" placeholder="Mensaje:" style="height: 100%;">                                     
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-12 col-sm-10 input-form-div" style="" >
+                                                    <button type="submit" class="form-contact button" style=" width: 100%; height: 55px; background-color: #E1CCCC;  margin-top: 30px;"> <img src="./img/enviar.svg" style="margin-right: 20px;"  width="7%" alt=""></button>                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px;" class="regularMonts ">
                             
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <address class="side-icon-boxes">
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/wsp.jpg" style="border-radius: 100%;" alt="">
-                                </div>
-                                <p class="letraPrincipal" >
-                                    <strong>Whatsapp: </strong> 
-                                    <a href ="https://wa.link/taz4m1" style="color: white;"> 
-                                        <u> 34 664858028</u> 
-                                        <br />  
-                                    </a> 
-                                    <a href ="https://wa.link/taz4m1" style="color: white;"> 
-                                        <u> 34 63347579</u> 
-                                        <br />  
-                                    </a> 
-                                 </p>
+                        <div class="row justify-content-center icon-content " style="margin-top: 0px;">
+                            <div class="col-md text-center " >
+                                <a href="#Nosotros"> <i class="fa fa-angle-down fa-4x icon-white" ></i></a>
                             </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/phone-arrow.png" alt="">
-                                </div>
-                                <p class="letraPrincipal"><strong>Telefono: </strong>
-                                    <a href="callto:+34664858028">+34 664858028</a> <br />
-                                    <a href="callto:+34633475791">+34 633475791</a>
-                                </p>
-                            </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/mail-arrow.png" alt="">
-                                </div>
-                                <p class="letraPrincipal"><strong>E-mail: </strong>
-                                    <a href="mailto:Hola@wantfrom.es">Hola@wantfrom.es</a> <br />
-                                    <a href="mailto:hola@wantfrom.com">Hola@wantfrom.com</a> <br />
-                                </p>
-                            </div>
-                        </address>
-                    </div>
-                    <div class="col-xs-12 col-md-8">
-                        <form action="prueba.php" id="contact-form" method="post" class="contact-form">
-                            <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
-                            </div>
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
-                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                            <button type="submit" class="button ">Submit!</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 pull-right">
-                        <div class="col-xs-8 col-xs-offset-2 col-sm-10 ">
-                            <ul class="social-menu text-center left-Tablet text-rightLarge text-rightMedium">
-                                <li><a href="https://www.facebook.com/wantfrom/"><i class="ti-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/wantfrom.es/"><i class="ti-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/wantfrom/"><i class="ti-linkedin"></i></a></li>
-                                <li><a href="mailto:Hola@wantfrom.es"><i class="ti-email"></i></a></li>
-                            </ul>
-                        </div>
+        </section>
 
-                        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-8 text-center left-Tablet text-centerLg">
-                            <img style="margin-top: 10px;" src="./images/wsp-qr.png" height="100" width="100" alt="">
-                        </div>
-                        
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <p class="text-footer" style="margin-top: 25px;">Wantfrom es una empresa dedicada a crear, mantener y mejorar una plataforma de mercado online
-                            que permita gestionar un negocio digitalmente, de manera accesible y eficiente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <p>&copy;Copyright 2020 All right reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
 </body>
-</html>
 
-   
+<script>
+    /*
+    window.onload = function () {
+        setTimeout(function () {
+            document.getElementById('hero-background').style.width = '100%';
+        }, 1500);
+        setTimeout(function () {
+            document.getElementById('hero-text').style.opacity = '1';
+        }, 2500);
+        setTimeout(function () {
+            document.getElementById('hero-img').style.opacity = '1';
+        }, 3500);
+        setTimeout(function () {
+            document.getElementById('lines').style.opacity = '1';
+        }, 4500);
+    };
+    */
+
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        //UN IF/ELSE POR CADA SECCION (scrolled es porcentaje que bajo, si son 3 a cada section le corresponde 33%)
+        if(scrolled > 20){
+            var elmnt = document.getElementById('barra1');
+            elmnt.classList.add("barra-active")
+        }else{
+            var elmnt = document.getElementById('barra1');
+            elmnt.classList.remove("barra-active")
+        }
+
+
+        if(scrolled > 40){
+            var elmnt = document.getElementById('barra2');
+            elmnt.classList.add("barra-active")
+            elmnt.style.borderBottom = "7px solid #C00;"
+        }else{
+            var elmnt = document.getElementById('barra2');
+            elmnt.classList.remove("barra-active")
+        }
+
+        if(scrolled > 60 ){
+            var elmnt = document.getElementById('barra3');
+            elmnt.classList.add("barra-active")
+        
+        }else{
+            var elmnt = document.getElementById('barra3');
+            elmnt.classList.remove("barra-active")
+
+        }
+        
+        if(scrolled > 80){
+                var elmnt = document.getElementById('barra4');
+            elmnt.classList.add("barra-active")
+        }else{
+            var elmnt = document.getElementById('barra4');
+            elmnt.classList.remove("barra-active")
+            document.getElementById("logo1").src="img/logos/Logo-CelesteBlanco.svg";
+        }
+
+        if(scrolled >70 && scrolled < 95){
+                var elmnt1 = document.getElementById('logo1');
+                document.getElementById("logo1").src="img/logos/Logo-Azul.svg";
+        }else{
+                document.getElementById("logo1").src="img/logos/Logo-CelesteBlanco.svg";
+            }
+
+            /*
+        if(scrolled > 100){
+                var elmnt = document.getElementById('barra5');
+            elmnt.classList.add("barra-active")
+        }
+        */
+        
+
+
+    }
+
+        function myFunction2() {
+            var elmnt = document.getele('body');
+            var x = elmnt.scrollLeft;
+            var y = elmnt.scrollTop;
+            console.log('aca , ', y)
+        }
+
+
+    
+            $("#navbarSupportedContent").click(
+                function(event) {
+                $('.navbar-collapse').collapse('hide');
+                }
+            );
+
+            $("#bodyContent").click(
+                function(event) {
+                console.log('323232332232323232323')
+                $('.navbar-collapse').collapse('hide');
+                }
+            );
+
+
+        
+
+
+
+        $('.svg-inject').svgInject();
+
+
+</script>
+
+</html

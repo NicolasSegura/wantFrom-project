@@ -3,7 +3,7 @@
     --dark-x: #1d2027;
     --light-blue-x3: #71b9f4;
     --light-blue-x2: #287bce;
-    --light-blue-x34: #214f87;
+    --light-blue-x4: #214f87;
     --blue-primary: #243f66;
     --grey-wf: #ebece6;
 }
@@ -145,12 +145,25 @@ html, body {
     background-color: var(--light-blue-x3);
 }
 
+.background-light-blue-x4{
+    background-color: var(--light-blue-x4);
+}
+
 .background-grey-wf{
     background-color: var(--grey-wf);
 }
 
 .icon-white{
     color: white;
+}
+
+.form-contact{
+    border-radius: 10px; 
+    border: 0;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
 }
 
 /* BOTON FLOTANTE WSP */
@@ -170,9 +183,10 @@ html, body {
 
 /*video de seccion nosotros*/
 #videoHome {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
@@ -192,8 +206,16 @@ html, body {
 
 .nav-link{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'monstserrat light 0';
+}
+
+.input-form-div{
+    padding-left: 0px;
+}
+
+.item-contact{
+    font-size: 20px;
 }
 
 .barra-active{
@@ -208,22 +230,52 @@ html, body {
 .price-table{
     background-color: #ebece6;
     padding-top: 20px;
-    border-radius: 15%;
-
+    border-radius: 10px; 
+    border: 0;
+    width: 90%;
+    margin: auto;       
 }
 .price-table ul li {
-    list-style-type: disc;
+    list-style-type: none;
     color: var(--blue-primary);
     font-family: 'monstserrat-Regular';
+    font-size: 18px;
+}
+
+.card-monto{
+    font-size: 30px;
+}
+
+.social-menu  li {
+    list-style-type: none;
+    margin-top: 15px;
+    position: relative;
+    left: -15px;
+    text-align: left;
+}
+
+/*Strong signal*/
+.iconic-signal.iconic-signal-strong .iconic-signal-base {
+    fill:#569e26;
+}
+.iconic-signal.iconic-signal-strong .iconic-signal-wave * {
+    stroke:#569e26;
 }
 
 .margin-80px{
     margin-bottom: -80px;
 }
 
+.hide{
+    opacity: 0;
+}
+
 .boton-cardPrice{
+
+    border-radius: 10px; 
+    border: 0;
     margin-bottom: 20px;
-    border-radius: 10%;
+    width: 60%;
 }
 
 
@@ -258,10 +310,22 @@ html, body {
     padding: .75rem 2rem;
 }
 
+.navBarBoton{
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+
+}
+
+
+
 
 @media (max-width: 1024px) {
    .display-1 {
        font-size: 3rem;
+   }
+   .seccionesPropias{
+       height: 1400px;
    }
 }
 
@@ -277,6 +341,9 @@ html, body {
     #hero-background {
         height: 100%;
     }
+    .seccionesPropias{
+        height: auto;
+    }
 }
 
 @media (max-width: 575.98px) { 
@@ -287,3 +354,61 @@ html, body {
         max-width: 260px;
     }
  }
+
+
+ /**
+*Accordion
+**/
+
+#accordion .panel {
+    background: none;
+}
+
+#accordion .panel .panel-title {
+    padding: 30px 0 30px 60px;
+    position: relative;
+}
+
+#accordion .panel .panel-collapse {
+    padding-left: 60px;
+}
+
+#accordion .panel .panel-title a span:after,
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 36px;
+    height: 36px;
+    background: #2f60c3;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span:after {
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%)
+}
+
+#accordion .panel .panel-title a span:before {
+    -webkit-transform: translate(-50%) rotate(90deg);
+    transform: translate(-50%) rotate(90deg)
+}
+
+#accordion .panel .panel-title a[aria-expanded="true"] span:before {
+    -webkit-transform: translate(-50%) rotate(0deg);
+    transform: translate(-50%) rotate(0deg)
+}
+
+
+
