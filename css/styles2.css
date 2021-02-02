@@ -105,6 +105,11 @@ html, body {
 
 /* ESTILOS PROPIOS */
 
+.icono-flecha{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
 .lightMontse{
     font-family: 'monstserrat light 0';
 }
